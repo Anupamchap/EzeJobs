@@ -1,2 +1,2 @@
 # EzeJobs
-Job Portal built using reactjs and redux
+Job Portal built using reactjs and redux.
