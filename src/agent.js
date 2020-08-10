@@ -2,7 +2,6 @@ import superagentPromise from 'superagent-promise';
 import _superagent from 'superagent';
 
 const superagent = superagentPromise(_superagent, global.Promise);
-
 const API_ROOT = 'http://localhost:3000/api';
 const encode = encodeURIComponent;
 const responseBody = res => res.body;
@@ -13,7 +12,6 @@ const tokenPlugin = req => {
     req.set('authorization', `Token ${token}`);
   }
 }
-
 
 const requests = {
   del: url =>
