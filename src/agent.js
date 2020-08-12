@@ -13,6 +13,7 @@ const tokenPlugin = req => {
   }
 }
 
+
 const requests = {
   del: url =>
     superagent.del(`${API_ROOT}${url}`).use(tokenPlugin).then(responseBody),
